@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                         // Modern JavaScript
+    "useDefineForClassFields": true,
+    "module": "ESNext",                         // ES module support
+    "moduleResolution": "Node",
+    "strict": true,
+    "jsx": "react-jsx",                         // For React JSX (modern transform)
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true                              // Vite handles emitting
+  },
+  "include": ["src"],
+  "references": [],
+  "exclude": ["node_modules", "dist"]
+}
