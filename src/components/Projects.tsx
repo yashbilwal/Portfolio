@@ -6,7 +6,7 @@ import webscrapimg from '../Images/sentiment.png';
 import blinkitimg from '../Images/blinkit.png';
 import custsegimg from '../Images/customer_segment.png';
 import flowerclassimg from '../Images/flowerclass.png';
-import precesionimg from '../Images/precision.png';
+import precesionimg from '../Images/Precision.png';
 import angquizimg from '../Images/angquiz.png';
 import ecommerceimg from '../Images/ecommerce_home.png';
 import stocksensorimg from '../Images/stocksensor_home.png';
