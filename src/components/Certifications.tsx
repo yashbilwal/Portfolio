@@ -24,7 +24,7 @@ const Certifications = () => {
     {
       title: 'Google Data Analytics Professional Certificate',
       issuer: 'Google',
-      date: 'June, 2025',
+      date: 'expected June, 2025',
       description: 'Comprehensive program covering data analysis, visualization, and statistical analysis using industry-standard tools.',
       image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
       skills: ['Data Analysis', 'SQL', 'Tableau', 'R Programming', 'Data Visualization'],
@@ -34,7 +34,7 @@ const Certifications = () => {
     {
       title: 'Microsoft Certified: Power BI Data Analyst Associate',
       issuer: 'Microsoft',
-      date: 'June, 2025',
+      date: 'expected July, 2025',
       description: 'Advanced certification in Power BI for creating interactive dashboards and business intelligence solutions.',
       image: 'https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
       skills: ['Power BI', 'DAX', 'Power Query', 'Data Modeling', 'Business Intelligence'],

@@ -61,8 +61,7 @@ const Footer = () => {
                 'Web Development',
                 'Data Analytics',
                 'Power BI Dashboards',
-                'Business Intelligence',
-                'Consulting'
+                'Business Intelligence'
               ].map((service) => (
                 <div key={service} className="text-slate-400 hover:text-blue-400 transition-colors duration-300">
                   {service}
