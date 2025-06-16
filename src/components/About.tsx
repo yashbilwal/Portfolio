@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Code, BarChart3, Award, Coffee } from 'lucide-react';
+import profileimg from '../Images/profile.png'
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -36,7 +37,7 @@ const About = () => {
               <div className="w-80 h-80 rounded-full overflow-hidden shadow-2xl border-4 border-gradient-to-r from-blue-500 to-purple-600 p-1">
                 <div className="w-full h-full rounded-full overflow-hidden">
                   <img
-                    src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop"
+                    src= {profileimg}
                     alt="Yash Profile"
                     className="w-full h-full object-cover"
                   />
