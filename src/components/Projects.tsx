@@ -10,6 +10,7 @@ import precesionimg from '../Images/Precision.png';
 import angquizimg from '../Images/angquiz.png';
 import ecommerceimg from '../Images/ecommerce_home.png';
 import stocksensorimg from '../Images/stocksensor_home.png';
+import bellabeatimg from '../Images/bellabeat_case_study_report.png';
 
 const Projects = () => {
   const [ref, inView] = useInView({
@@ -61,6 +62,14 @@ const Projects = () => {
   ];
 
   const dataProjects = [
+    {
+      title: 'Bellabeat Case Study – Google Data Analytics Capstone',
+      description: 'Analyzed Fitbit device data using R to uncover trends in user activity, sleep, and heart rate. Built a report with insights and marketing recommendations for Bellabeat.',
+      image: bellabeatimg,
+      tech: ['R', 'ggplot2', 'tidyverse', 'Data Cleaning', 'EDA'],
+      viewUrl: '/Bellabeat-Case-Study-Report.pdf',
+      category: 'data'
+    },
     {
       title: 'Blinkit Sales & Operations Dashboard (Power BI)',
       description: 'Built an interactive Power BI dashboard for Blinkit to visualize key business metrics. Used SQL for data transformation involving filtering, joins, and aggregation of sales and regional data. Delivered real-time insights into sales trends, customer behavior, and product demand to support data-driven decisions.',
@@ -151,10 +160,13 @@ const Projects = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 href={project.viewUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-green-500 text-white p-3 rounded-full hover:bg-green-600 transition-colors duration-300 shadow-lg"
               >
                 <BarChart3 size={20} />
               </motion.a>
+
             )}
           </div>
         </div>
@@ -165,8 +177,8 @@ const Projects = () => {
           <h3 className="text-xl font-bold text-white">{project.title}</h3>
           <div className="flex gap-2">
             <span className={`px-3 py-1 rounded-full text-xs font-medium ${project.category === 'web'
-                ? 'bg-blue-500/20 text-blue-400 border border-blue-500/30'
-                : 'bg-green-500/20 text-green-400 border border-green-500/30'
+              ? 'bg-blue-500/20 text-blue-400 border border-blue-500/30'
+              : 'bg-green-500/20 text-green-400 border border-green-500/30'
               }`}>
               {project.category === 'web' ? 'Web Dev' : 'Analytics'}
             </span>
@@ -228,8 +240,8 @@ const Projects = () => {
               whileTap={{ scale: 0.95 }}
               onClick={() => setActiveFilter(button.id)}
               className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 flex items-center gap-2 ${activeFilter === button.id
-                  ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg neon-glow'
-                  : 'bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-600/30'
+                ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg neon-glow'
+                : 'bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-600/30'
                 }`}
             >
               {typeof button.icon === 'string' ? (
@@ -239,8 +251,8 @@ const Projects = () => {
               )}
               {button.label}
               <span className={`ml-2 px-2 py-1 rounded-full text-xs ${activeFilter === button.id
-                  ? 'bg-white/20 text-white'
-                  : 'bg-slate-700 text-slate-400'
+                ? 'bg-white/20 text-white'
+                : 'bg-slate-700 text-slate-400'
                 }`}>
                 {button.count}
               </span>
