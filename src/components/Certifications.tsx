@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Award, ExternalLink, Star } from 'lucide-react';
 import meanStackImg from '../Images/mean-stack.png'; // Adjust the path as necessary
+import googleAnalyticsImg from '../Images/Google_data_analytics.png'; // Adjust the path as necessary
 
 const Certifications = () => {
   const [ref, inView] = useInView({
@@ -24,11 +25,11 @@ const Certifications = () => {
     {
       title: 'Google Data Analytics Professional Certificate',
       issuer: 'Google',
-      date: 'expected June, 2025',
+      date: 'June, 2025',
       description: 'Comprehensive program covering data analysis, visualization, and statistical analysis using industry-standard tools.',
-      image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
-      skills: ['Data Analysis', 'SQL', 'Tableau', 'R Programming', 'Data Visualization'],
-      credentialUrl: '#',
+      image: googleAnalyticsImg,
+      skills: ['Data analysis','Data - driven decision making','Data cleaning','Calculation and analysis in SQL', 'spreadsheets', 'Data visualization', 'Effective presentations', 'R programming'],
+      credentialUrl: 'https://www.coursera.org/account/accomplishments/specialization/BT4KUU6YPAXV',
       color: 'from-blue-500 to-cyan-500'
     },
     {
