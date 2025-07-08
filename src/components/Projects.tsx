@@ -11,6 +11,7 @@ import angquizimg from '../Images/angquiz.png';
 import ecommerceimg from '../Images/ecommerce_home.png';
 import stocksensorimg from '../Images/stocksensor_home.png';
 import bellabeatimg from '../Images/bellabeat_case_study_report.png';
+import custmarketingimg from '../Images/customer_marketing_campaign_analysis.png';
 
 const Projects = () => {
   const [ref, inView] = useInView({
@@ -62,6 +63,14 @@ const Projects = () => {
   ];
 
   const dataProjects = [
+    {
+      title: 'Customer Marketing Campaign Analysis',
+      description: 'This project explores customer behavior and marketing effectiveness using a real retail dataset. I performed data cleaning, feature engineering, customer segmentation (using clustering), and developed insights around product preference, engagement scores, and channel usage. The goal was to help marketing teams design personalized campaigns to improve ROI. The project follows a structured analytics workflow from Ask to Act, mimicking industry standards.',
+      image: custmarketingimg,
+      tech: ['R', 'ggplot2', 'Marketing Analytics & Campaign Insights', 'Data Cleaning', 'Feature Engineering & EDA'],
+      viewUrl: '/Customer-Marketing-Campaign-Analysis-Report.pdf',
+      category: 'data'
+    },
     {
       title: 'Bellabeat Case Study – Google Data Analytics Capstone',
       description: 'Analyzed Fitbit device data using R to uncover trends in user activity, sleep, and heart rate. Built a report with insights and marketing recommendations for Bellabeat.',
